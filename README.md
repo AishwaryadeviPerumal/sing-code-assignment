@@ -10,3 +10,9 @@ solution1.animal
             1. walk() method is having default definition in Animal class which may not be applicable for all the animal types. so we can have abstract super class or interface with only method declarations and let subclass define the method as per the need.
             2. there is no design pattern followed. we can implement Factory pattern to centralize creating sub class objects which makes the code easy to maintain and understand.
             3. Solution class is instantiating the Bird class and assigning it to the Bird reference type. instead we should assign it to the Animal Class so that any change in the actual object will not impact the reference.
+            
+solution2.animal
+==================
+2.
+    - The proposed design re structured the hierarchy in such a way that it can be extended to add more functionality 
+    - the proposed design adhers to Interface Segregation principle of SOLID principles. low level implementation class like Duck and Chicken can implement only the method it is interested in. for example Duck interested in swimming so implements Swimmable interface where as Chicken not interested in swimming and not required to implement.
