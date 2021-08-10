@@ -1,6 +1,6 @@
 package com.singtel.solution2.animal;
 
-class Bird implements Walkable, Singable {
+class Bird extends Animal implements Walkable, Singable {
     @Override
     public void sing() {
         System.out.println("I am singing");
