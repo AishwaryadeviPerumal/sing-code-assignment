@@ -21,3 +21,8 @@ solution2.animal
     - since it is asked to create a rooster model without inheritance relationship, sing method is implemented by checking the sex. where sex is an enum defined in Animal class because all the animals can have sex type. sex enum cannot be defined in a separate file because switch case statement does not allow qualified enum in case for example Sex.MALE is not allowed.
     - BirdsFactory.java class is added to create different birds based on the request. this makes the code easy to maintain.
     - BirdsClient.java,BirdsClientTest.java class is added to test the sing method based on the chicken sex.
+4. 
+    - Parrot changes its sound depending on which animal it lives with.
+    - Adaptor pattern is used to produce a parrot with different behaviour based on which Animal it lives with. Note-if this is an additional feature to be added during runtime then Decorator pattern could have been used.
+    - if a parrot lives with Duck or Phone, we can add a new method in ParrotAdaptor.java & ParrotAdaptorImpl.java to produce a parrot with new sound rather than creating a new Parrot child class.
+    - ParrotAdaptorClient.java & ParrotAdaptorClientTest.java class is added to test the sing method of parrot lives with different animals.
