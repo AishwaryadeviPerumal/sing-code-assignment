@@ -1,20 +1,17 @@
-package com.singtel.solution1.animal;
+package com.singtel.solution2.animal;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
 import org.mockito.junit.MockitoJUnitRunner;
 
 @RunWith(MockitoJUnitRunner.class)
-public class BirdTest {
+public class BirdsClientTest {
 
-    @InjectMocks
-    Bird bird;
+    private String[] args=null;
 
     @Test
     public void singTest(){
-        bird.sing();
+        BirdsClient.main(args);
         assert(true);
     }
-
 }
