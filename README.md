@@ -39,4 +39,10 @@ section B: solution2.animal
 3.  
     - Dolphins are not fish but can swim. so Dolphin directly extends SwimmingAnimal.
     - in general, duplicate codes can be avoided by adding the common behaviours and properties to the possible base class level.in the current implementation, almost no codes are duplicated.   
-     
+
+section C: solution2.animal
+============================      
+1. 
+    - butterfly can fly but cannot make sound. so created a common Insect class which extends Animal and implements Flyable interface. Butterfly class extends Insect
+2. 
+    - yet to implement. idea is -may be we can have a kind of Adaptor pattern with a method which can metapmorphosis from butterfly to caterpillar.   
