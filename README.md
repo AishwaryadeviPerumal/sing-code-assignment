@@ -45,4 +45,5 @@ section C: solution2.animal
 1. 
     - butterfly can fly but cannot make sound. so created a common Insect class which extends Animal and implements Flyable interface. Butterfly class extends Insect
 2. 
-    - yet to implement. idea is -may be we can have a kind of Adaptor pattern with a method which can metapmorphosis from butterfly to caterpillar.   
+    - created a caterpillar class which extends Animal and implements Walkable interface.
+    - created a util class TransformInsectUtil.java to metapmorphosis from butterfly to caterpillar and created a test class TransformInsectUtilTest.java 
