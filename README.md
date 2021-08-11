@@ -11,8 +11,8 @@ solution1.animal
             2. there is no design pattern followed. we can implement Factory pattern to centralize creating sub class objects which makes the code easy to maintain and understand.
             3. Solution class is instantiating the Bird class and assigning it to the Bird reference type. instead we should assign it to the Animal Class so that any change in the actual object will not impact the reference.
             
-solution2.animal
-==================
+section A: solution2.animal
+============================
 2. Duck & Chicken
     - The proposed design re structured the hierarchy in such a way that it can be extended to add more functionality 
     - the proposed design adhers to Interface Segregation principle of SOLID principles. low level implementation class like Duck and Chicken can implement only the method it is interested in. for example Duck interested in swimming so implements Swimmable interface where as Chicken not interested in swimming and not required to implement.
@@ -26,3 +26,17 @@ solution2.animal
     - Adaptor pattern is used to produce a parrot with different behaviour based on which Animal it lives with. Note-if this is an additional feature to be added during runtime then Decorator pattern could have been used.
     - if a parrot lives with Duck or Phone, we can add a new method in ParrotAdaptor.java & ParrotAdaptorImpl.java to produce a parrot with new sound rather than creating a new Parrot child class.
     - ParrotAdaptorClient.java & ParrotAdaptorClientTest.java class is added to test the sing method of parrot lives with different animals.
+    
+section B: solution2.animal
+============================    
+1. 
+    - fish cannot walk or sing but can swim. and other swimming animals expected to create. so created a SwimmingAnimal class which extends Animal and Implements Swimmable
+2. 
+    - implemented Decorator Pattern to create a specialized fish like Shark and Clown,
+    - Shark and Clown fish requires additional features like color and size but those are non functional and kind of adding additional decoration to the basic fish. so did not add a separate child class for these special fish creation.
+    - basic fish is wrapped in the FishDecorator class to add special behaviours like eat() and makejokes()
+    - FishClient.java and FishClientTest.java files added to test the different fish color, size and behaviours.
+3.  
+    - Dolphins are not fish but can swim. so Dolphin directly extends SwimmingAnimal.
+    - in general, duplicate codes can be avoided by adding the common behaviours and properties to the possible base class level.in the current implementation, almost no codes are duplicated.   
+     

@@ -10,7 +10,7 @@ public class ParrotAdaptorClientTest {
     private String[] args=null;
 
     @Test
-    public void singTest(){
+    public void parrotAdaptorClientTest(){
         ParrotAdaptorClient.main(args);
         assert(true);
     }

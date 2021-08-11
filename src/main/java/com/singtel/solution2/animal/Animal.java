@@ -6,8 +6,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public abstract class Animal {
-    String sound;
-    Sex sex;
+    protected String sound;
+    protected Sex sex;
     public enum Sex {
         MALE, FEMALE
     }
