@@ -55,3 +55,11 @@ section D: solution2.animal
     - AnimalFactory class is added to create different animal instant based on the type
     - AnimalClient class is added which gets the animal instants and prints the no of walkable, flyable, singable, swimmable animals.
     - AnimalClientTest class is added to test the AnimalClient class.
+
+Bonus: solution2.animal
+============================
+1. 
+    - Translations class is added and considered as translation source which has a static nested map(multimap can also be used) with animal type and language as keys 
+    - TranslationService class is created and added to Animal class with composite relation to help get the translations from translation source
+    - added a overloaded sing(lang) method in Chicken class which takes lang as an argument and sings accordingly.
+    - ChickenTest and TranslationServiceTest classes are added for unit testing.

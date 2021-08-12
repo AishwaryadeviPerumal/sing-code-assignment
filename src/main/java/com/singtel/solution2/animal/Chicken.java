@@ -18,4 +18,15 @@ public class Chicken extends Bird {
             default:   System.out.println("Cluck, cluck");
         }
     }
+
+    public void sing(String lang) {
+        switch (sex) {
+            case MALE: {
+                String sound=translatorService.getSoundTranslations("rooster",lang);
+                System.out.println(sound);
+                break;
+            }
+            default:   System.out.println("Cluck, cluck");
+        }
+    }
 }
