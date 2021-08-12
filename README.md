@@ -1,5 +1,5 @@
 # sing-code-assignment
-solution1.animal
+package-solution1.animal
 =================
 1. Can you implement the sing() method for the bird? - Implemented.
    1. How did you unit test it? 
@@ -11,7 +11,7 @@ solution1.animal
             2. there is no design pattern followed. we can implement Factory pattern to centralize creating sub class objects which makes the code easy to maintain and understand.
             3. Solution class is instantiating the Bird class and assigning it to the Bird reference type. instead we should assign it to the Animal Class so that any change in the actual object will not impact the reference.
             
-section A: solution2.animal
+section A: package-solution2.animal
 ============================
 2. Duck & Chicken
     - The proposed design re structured the hierarchy in such a way that it can be extended to add more functionality 
@@ -27,7 +27,7 @@ section A: solution2.animal
     - if a parrot lives with Duck or Phone, we can add a new method in ParrotAdaptor.java & ParrotAdaptorImpl.java to produce a parrot with new sound rather than creating a new Parrot child class.
     - ParrotAdaptorClient.java & ParrotAdaptorClientTest.java class is added to test the sing method of parrot lives with different animals.
     
-section B: solution2.animal
+section B: package-solution2.animal
 ============================    
 1. 
     - fish cannot walk or sing but can swim. and other swimming animals expected to create. so created a SwimmingAnimal class which extends Animal and Implements Swimmable
@@ -40,7 +40,7 @@ section B: solution2.animal
     - Dolphins are not fish but can swim. so Dolphin directly extends SwimmingAnimal.
     - in general, duplicate codes can be avoided by adding the common behaviours and properties to the possible base class level.in the current implementation, almost no codes are duplicated.   
 
-section C: solution2.animal
+section C: package-solution2.animal
 ============================      
 1. 
     - butterfly can fly but cannot make sound. so created a common Insect class which extends Animal and implements Flyable interface. Butterfly class extends Insect
@@ -48,7 +48,7 @@ section C: solution2.animal
     - created a caterpillar class which extends Animal and implements Walkable interface.
     - created a util class TransformInsectUtil.java to metapmorphosis from butterfly to caterpillar and created a test class TransformInsectUtilTest.java
 
-section D: solution2.animal
+section D: package-solution2.animal
 ============================   
  1. 
     - Cat, Dog and Frog class is added.
@@ -56,7 +56,7 @@ section D: solution2.animal
     - AnimalClient class is added which gets the animal instants and prints the no of walkable, flyable, singable, swimmable animals.
     - AnimalClientTest class is added to test the AnimalClient class.
 
-Bonus: solution2.animal
+Bonus: package-solution2.animal
 ============================
 1. 
     - Translations class is added and considered as translation source which has a static nested map(multimap can also be used) with animal type and language as keys 
