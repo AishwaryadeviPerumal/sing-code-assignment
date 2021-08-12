@@ -63,3 +63,13 @@ Bonus: solution2.animal
     - TranslationService class is created and added to Animal class with composite relation to help get the translations from translation source
     - added a overloaded sing(lang) method in Chicken class which takes lang as an argument and sings accordingly.
     - ChickenTest and TranslationServiceTest classes are added for unit testing.
+2.
+    - Rest Api is developed to fetch all the animals. change includes,
+        - packages are restructured a bit to fit into to web project architecture.
+        - introduced spring boot web starter dependency in pom.xml file
+        - added a AnimalApp with @SpringBootApplication annotation to run the app as a spring boot app.
+        - added AnimalController class, AnimalService interface, AnimalServiceImpl class,Response & MetaInfo class
+        - added a test file for each class-AnimalApp, AnimalControllerTest, AnimalServiceTest
+        - added AnimalIntegrationTest class for integration testing the Api flow.
+        - loggers added
+        - improvements: custom exception, custom error codes & descriptions, swagger documentations can be added as an enhancements.
