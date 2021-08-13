@@ -4,8 +4,8 @@ import com.singtel.solution2.animal.model.*;
 
 public class FishClient {
     public static void main(String[] args){
-        Fish sharkFish =new SharkFish(new Fish());
-        Fish clownFish = new ClownFish(new Fish());
+        Fish sharkFish =new SharkFish(new NormalFish());
+        Fish clownFish = new ClownFish(new NormalFish());
 
         System.out.println("shark fish size:"+sharkFish.getSize());
         System.out.println("shark fish color:"+sharkFish.getColor());

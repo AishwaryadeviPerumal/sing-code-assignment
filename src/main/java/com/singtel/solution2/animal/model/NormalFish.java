@@ -1,5 +1,4 @@
 package com.singtel.solution2.animal.model;
 
-public class Insect extends Animal {
-
+public class NormalFish extends Fish {
 }

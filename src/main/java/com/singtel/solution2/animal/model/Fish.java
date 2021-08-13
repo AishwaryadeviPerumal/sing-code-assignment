@@ -5,7 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Fish extends SwimmingAnimal {
+public abstract class Fish extends SwimmingAnimal {
     public enum SIZE { SMALL, LARGE};
     public enum COLOR {ORANGE, GREY};
 

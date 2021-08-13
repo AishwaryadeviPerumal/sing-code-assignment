@@ -11,9 +11,9 @@ public class AnimalFactory {
             case "CHICKEN": return new Chicken();
             case "ROOSTER": return new Chicken(Animal.Sex.MALE);
             case "PARROT": return new Parrot();
-            case "FISH": return new Fish();
-            case "SHARK": return new SharkFish(new Fish());
-            case "CLOWNFISH": return new ClownFish(new Fish());
+            case "FISH": return new NormalFish();
+            case "SHARK": return new SharkFish(new NormalFish());
+            case "CLOWNFISH": return new ClownFish(new NormalFish());
             case "DOLPHIN": return new Dolphin();
             case "FROG": return new Frog();
             case "DOG": return new Dog();

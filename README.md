@@ -30,11 +30,13 @@ section A: package-solution2.animal
 section B: package-solution2.animal
 ============================    
 1. 
-    - fish cannot walk or sing but can swim. and other swimming animals expected to create. so created a SwimmingAnimal class which extends Animal and Implements Swimmable
+    - fish cannot walk or sing but can swim. and other swimming animals expected to create. so created a common SwimmingAnimal class which extends Animal and Implements Swimmable interface
 2. 
+    - created a Fish abstract class which extends SwimmingAnimal.
+    - created a NormalFish class which extends Fish
     - implemented Decorator Pattern to create a specialized fish like Shark and Clown,
-    - Shark and Clown fish requires additional features like color and size but those are non functional and kind of adding additional decoration to the basic fish. so did not add a separate child class for these special fish creation.
-    - basic fish is wrapped in the FishDecorator class to add special behaviours like eat() and makejokes()
+    - Shark and Clown fish requires additional features like color and size but those are non functional and kind of adding additional decoration to the normal fish. so did not add a separate child class for these special fish creation.
+    - normal fish is wrapped in the FishDecorator class to add special behaviours like eat() and makejokes()
     - FishClient.java and FishClientTest.java files added to test the different fish color, size and behaviours.
 3.  
     - Dolphins are not fish but can swim. so Dolphin directly extends SwimmingAnimal.
@@ -43,9 +45,10 @@ section B: package-solution2.animal
 section C: package-solution2.animal
 ============================      
 1. 
-    - butterfly can fly but cannot make sound. so created a common Insect class which extends Animal and implements Flyable interface. Butterfly class extends Insect
+    - butterfly is flyable insect but cannot make sound. caterpillar is walkable insect.so created a common Insect class which extends Animal.
+    - butterfly extends Insect and implements Flyable interface.
 2. 
-    - created a caterpillar class which extends Animal and implements Walkable interface.
+    - created a caterpillar class which extends Insect and implements Walkable interface.
     - created a util class TransformInsectUtil.java to metapmorphosis from butterfly to caterpillar and created a test class TransformInsectUtilTest.java
 
 section D: package-solution2.animal
