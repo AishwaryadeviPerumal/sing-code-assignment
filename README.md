@@ -1,8 +1,9 @@
 # sing-code-assignment
-   final class diagram is represented in animal-app-class-diagram.jpeg file.
+   - final class diagram is represented in animal-app-class-diagram.jpeg file.
+   - same package(solution2.animal) is modified for each section of question, model changes can be tracked using commits
 
 package-solution1.animal
-=================
+=======================
 1. Can you implement the sing() method for the bird? - Implemented.
    1. How did you unit test it? 
         - We can call the sing() method from the test file(BirdTest.java) but cannot actually assert anything as this method call does not have any effect/return anything in the code to assert with.
