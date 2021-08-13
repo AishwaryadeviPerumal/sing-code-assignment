@@ -1,4 +1,6 @@
 # sing-code-assignment
+   final class diagram is represented in animal-app-class-diagram.jpeg file.
+
 package-solution1.animal
 =================
 1. Can you implement the sing() method for the bird? - Implemented.
